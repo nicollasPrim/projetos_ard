@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semáforo Duplo - Arduino</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Semáforo Duplo na Prática</h1><br><br>
+        <a href="index.html">Inicio</a>
+        <a href="spTinker.html">Semaforo simples | Tinkercad</a>
+        <a href="spArd.html">Semaforo simples | Arduino</a>
+        <a href="sdTinker.html">Semaforo duplo | Tinkercad</a>
+        <a href="sdArd.html">Semaforo duplo | Arduino</a><br><br>
+        <a href="ccTinker.html">Contador crescente | Tinkercad</a>
+        <a href="cdTinker.html">Contador decrescente | Tinkercad</a>
+        <a href="cSemaf.html">Contador com Semaforo | Tinkercad</a>
+    </header>
+    <article>
+        <h2>Montagem Prática</h2>
+        <img src="montagempratica.jpg" alt="Montagem Prática"><br>
+        <h2>Vídeo da Montagem Prática</h2>
+        <iframe src="video.mp4" frameborder="0" allowfullscreen></iframe><br><br>
+        <h2>Arduino IDE Semaforo duplo</h2>
+        <img src="arduinoIDEsemaforoDUPLO.png" alt="">
+        <h2>Código C++</h2>
+        <p>
+            void setup()<br>
+            {<br>
+              pinMode(A5, OUTPUT);<br>
+              pinMode(A0, OUTPUT);<br>
+              pinMode(A3, OUTPUT);<br>
+              pinMode(A2, OUTPUT);<br>
+              pinMode(A1, OUTPUT);<br>
+              pinMode(A4, OUTPUT);<br>
+            }<br><br>
+            <br>
+            void loop()<br>
+            {<br>
+              digitalWrite(A5, HIGH);<br>
+              digitalWrite(A0, HIGH);<br>
+              digitalWrite(A3, LOW);<br>
+              digitalWrite(A2, LOW);<br>
+              digitalWrite(A1, LOW);<br>
+              delay(9000); <br>
+              digitalWrite(A0, LOW);<br>
+              digitalWrite(A4, HIGH);<br>
+              digitalWrite(A5, LOW);<br>
+              digitalWrite(A2, HIGH);<br>
+              delay(2000); <br>
+              digitalWrite(A4, LOW);<br>
+              digitalWrite(A3, HIGH);<br>
+              delay(7000); <br>
+              digitalWrite(A1, HIGH);<br>
+              digitalWrite(A2, LOW);<br>
+              digitalWrite(A3, LOW);<br>
+              digitalWrite(A5, HIGH);<br>
+              delay(2000); <br>
+              delay(1); <br>
+            }<br>
+        </p>
+    </article>
+    <footer>
+    </footer>
+</body>
+</html>

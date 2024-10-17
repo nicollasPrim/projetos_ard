@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semáforo Simples - Tinkercad</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Semaforo simples | Tinkercad</h1><br><br>
+        <a href="index.html">Inicio</a>
+        <a href="spTinker.html">Semaforo simples | Tinkercad</a>
+        <a href="spArd.html">Semaforo simples | Arduino</a>
+        <a href="sdTinker.html">Semaforo duplo | Tinkercad</a>
+        <a href="sdArd.html">Semaforo duplo | Arduino</a><br><br>
+        <a href="ccTinker.html">Contador crescente | Tinkercad</a>
+        <a href="cdTinker.html">Contador decrescente | Tinkercad</a>
+        <a href="cSemaf.html">Contador com Semaforo | Tinkercad</a>
+    </header>
+    <article>
+        <h2>Circuito Projeto</h2>
+        <img src="SS_tinkercad.jpg" alt="Circuito no Tinkercad"><br>
+        <h2>Programação do Semáforo Simples</h2>
+        <img src="SS_tinkercad_circ.jpg" alt="Programação em Blocos">
+        <h2>Código em c++</h2>
+        <p>
+            int counter;<br><br>
+            <br>
+            int counter2;<br><br>
+            <br>
+            void setup()<br>
+            {<br>
+              pinMode(13, OUTPUT);<br>
+              pinMode(11, OUTPUT);<br>
+              pinMode(12, OUTPUT);<br>
+            }<br><br>
+            <br>
+            void loop()<br>
+            {<br>
+              digitalWrite(13, HIGH);<br>
+              digitalWrite(11, LOW);<br>
+              delay(7000); <br>
+              digitalWrite(12, HIGH);<br>
+              digitalWrite(13, LOW);<br>
+              delay(2000); <br>
+              digitalWrite(12, LOW);<br>
+              digitalWrite(11, HIGH);<br>
+              delay(5000); <br>
+            }<br>
+        </p>
+    </article>
+    <footer>
+    </footer>
+</body>
+</html>
